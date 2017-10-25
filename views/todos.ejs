@@ -1,0 +1,12 @@
+<ul>
+  <li><a href="/users">All Users</a></li>
+  <li><a href="/todos">All To Do's</a></li>
+</ul>
+
+<h1>All To Do's</h1>
+
+<ul>
+  <% for (var i=0; i<todos.length; i++) { %>
+    <li> <%= todos[i].task %> </li>
+  <% } %>
+</ul>
