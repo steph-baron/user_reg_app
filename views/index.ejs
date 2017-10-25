@@ -1,0 +1,12 @@
+<h1>All Users</h1>
+
+<a href="/sign_up">Add User</a>
+
+
+
+
+<ul>
+<% for (var i =0; i< data.length; i++) { %>
+  <li><a href=/users/<%= data[i].id %>> <%= data[i].username %></a></li>
+<% } %>
+</ul>
