@@ -1,12 +1,18 @@
+<ul>
+  <li><a href="/users">All Users</a></li>
+  <li><a href="/todos">All To Do's</a></li>
+</ul>
+
 <h1>All Users</h1>
 
-<a href="/sign_up">Add User</a>
-
-
-
+<form action="/users" method="post">
+  <input type="text" name="username" placeholder="username">
+  <input type="password" name="password" placeholder="password">
+  <input type="submit" value="Add User">
+</form>
 
 <ul>
-<% for (var i =0; i< data.length; i++) { %>
-  <li><a href=/users/<%= data[i].id %>> <%= data[i].username %></a></li>
-<% } %>
+<% for (var i=0; i<users.length; i++) { %>
+  <li><a href=/users/<%= users[i].id %>> <%= users[i].username %></a></li>
+  <% } %>
 </ul>
